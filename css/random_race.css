@@ -4,3 +4,6 @@ body {
     text-align: center;
 }
 
+#racetrack {
+    background: url("../images/road.jpg") left center repeat-x;
+}

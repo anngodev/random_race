@@ -7,12 +7,12 @@ $("#go").click(function() {
     // FUNCTION TO CHECK IF A CAR HAS WON THE RACE
     function checkIfComplete() {
         
-        if(isComplete == false) {
-            isComplete == true;
+        if( isComplete == false ) {
+            isComplete = true;
         } else {
-            place = "second";
-        };
-    };
+            place = 'second';
+        }
+    }
     
     // WIDTH OF CARS
     var carWidth = $("#car1").width();
@@ -29,7 +29,7 @@ $("#go").click(function() {
     var isComplete = false;
                                
     // SET FLAG VARIABLE TO FIRST BY DEFAULT
-    var place = "first";
+    var place = 'first';
     
     // ANIMATE CAR 1
     $("#car1").animate({
@@ -42,10 +42,27 @@ $("#go").click(function() {
         // ANIMATION IS COMPLETE
         
         // RUN FUNCTION
-        checkIfComplete;
+        checkIfComplete();
         
         // TEXT INFO FEEDBACK
-        $("#raceInfo1 span").text('Finished in ' + place + 'place with a time of ' + raceTime1 + 'milliseconds!');
+        $("#raceInfo1 span").text('Finished in ' + place + ' place with a time of ' + raceTime1 + ' milliseconds!');
+    });
+    
+    // ANIMATE CAR 2
+    $("#car2").animate({
+       // MOVE THE CAR THE WIDTH OF THE RACETRACK
+        left: raceTrackWidth,
+        
+        
+    }, raceTime2, function() {
+        
+        // ANIMATION IS COMPLETE
+        
+        // RUN FUNCTION
+        checkIfComplete();
+        
+        // TEXT INFO FEEDBACK
+        $("#raceInfo2 span").text('Finished in ' + place + ' place with a time of ' + raceTime2 + ' milliseconds!');
     });
                                
 });

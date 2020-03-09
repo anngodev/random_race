@@ -2,6 +2,7 @@
 
 body {
     text-align: center;
+    background: url("../images/checkered_flag.png") center;
 }
 
 #racetrack {
@@ -26,6 +27,26 @@ body {
     background: #333;
     height: 200px;
 }
+h1 {
+    border: ridge 24px white;
+    width: 250px;
+    height: 200px;
+    margin: 20px auto;
+    
+    
+}
+span#green {
+    color: #77b82f;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+span#red {
+    color: #b82f3e;
+    font-size: 48px;
+    font-weight: bold;
+}
+
 
 h2 {
     color: white;

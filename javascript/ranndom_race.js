@@ -10,9 +10,9 @@ $("#go").click(function() {
         if( isComplete == false ) {
             isComplete = true;
         } else {
-            place = 'second';
-        }
-    }
+            place = 'SECOND';
+        };
+    };
     
     // WIDTH OF CARS
     var carWidth = $("#car1").width();
@@ -29,7 +29,7 @@ $("#go").click(function() {
     var isComplete = false;
                                
     // SET FLAG VARIABLE TO FIRST BY DEFAULT
-    var place = 'first';
+    var place = 'FIRST';
     
     // ANIMATE CAR 1
     $("#car1").animate({
@@ -65,4 +65,11 @@ $("#go").click(function() {
         $("#raceInfo2 span").text('Finished in ' + place + ' place with a time of ' + raceTime2 + ' milliseconds!');
     });
                                
+});
+
+// RESET
+
+$("#reset").click(function() {
+    $(".car").css('left', '0');
+    $(".raceInfo span").text('');
 });

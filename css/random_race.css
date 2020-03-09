@@ -7,7 +7,7 @@ body {
 #racetrack {
     background: url("../images/road.jpg") left center repeat-x;
     height: 330px;
-    border-right: dashed 14px white;
+    border-right: double 20px red;
     box-sizing: border-box;
     margin: 40px 0;
 }

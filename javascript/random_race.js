@@ -70,6 +70,5 @@ $("#go").click(function() {
 // RESET
 
 $("#reset").click(function() {
-    $(".car").css('left', '0');
-    $(".raceInfo span").text('');
+   location.reload();
 });

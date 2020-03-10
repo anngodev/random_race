@@ -21,9 +21,9 @@ $("#go").click(function() {
     var raceTrackWidth = $(window).width() - carWidth;
     
     // GENERATE RANDOM NUMBER BETWEEN 1 AND 5000 (milliseconds)
-    var raceTime1 = Math.floor( (Math.random() * 5000) + 1);
+    var raceTime1 = Math.floor( (Math.random() * 5000 % 1000) + 1000);
     
-    var raceTime2 = Math.floor( (Math.random() * 5000) + 1);
+    var raceTime2 = Math.floor( (Math.random() * 5000 % 1000) + 1000);
                                
     // SET A FLAG VARIABLE TO FALSE BY DEFAULT
     var isComplete = false;

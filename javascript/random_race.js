@@ -2,7 +2,7 @@
 
 // GO BUTTON
 
-$("#go").click(function() {
+$("#go").one('click', function() {
     
     // FUNCTION TO CHECK IF A CAR HAS WON THE RACE
     function checkIfComplete() {
